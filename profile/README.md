@@ -8,7 +8,7 @@
 
  This study aims to explore the potential of haptic feedback in communicating complex navigation information to a driver’s rear neck. To achieve the goal, we propose a multi-modal haptic interface that provides navigation route information with a haptic rendering algorithm using vibrotactile actuator array and instantaneous alarm signal with cutaneous feedback mechanism. 
 
-![Architecture of the proposed haptic system](0.png)
+![Architecture of the proposed haptic system](/img/0.png)
 
 Architecture of the proposed haptic system
 
@@ -16,13 +16,13 @@ Architecture of the proposed haptic system
 
 ---
 
-![Untitled](1.png)
+![Untitled](/img/1.png)
 
 - I2C communication : Using SCL/SDA port to communicate with Arduino
 - 5V input
 - Use ports 1-6 of each multiplexer (because ports 0 and 7 are less reliable)
 
-![Untitled](2.png)
+![Untitled](/img/2.png)
 - + and - signal on the connection between DRV2605 and the actuator does not matter
 
 ## Arduino Code
@@ -43,7 +43,7 @@ $$
 SOA = 0.32 \cdot duration + 0.0473 ≥ duration
 $$
 
-![Untitled](3.png)
+![Untitled](/img/3.png)
 
 ### Modifying Parameters
 
@@ -64,7 +64,7 @@ case '2':
   break;
 ```
 
-![Untitled](4.png)
+![Untitled](/img/4.png)
 
 **Duration**
 
@@ -111,11 +111,11 @@ case 'a':
   }
 ```
 
-![Example of Navigation sign](5.png)
+![Example of Navigation sign](/img/5.png)
 
 Example of Navigation sign
 
-![Example of Alert sign](6.png)
+![Example of Alert sign](/img/6.png)
 
 Example of Alert sign
 
@@ -249,11 +249,11 @@ Using Test Track, Logitech SDK Unity package.
 
 Driving Virtual Environment send serial signals to microprocessor (Arduino)
 
-![Third-person perspective of the driving simulation in virtual environment](7.png)
+![Third-person perspective of the driving simulation in virtual environment](/img/7.png)
 
 Third-person perspective of the driving simulation in virtual environment
 
-![First-person perspective of the driving simulation in virtual environment](8.png)
+![First-person perspective of the driving simulation in virtual environment](/img/8.png)
 
 First-person perspective of the driving simulation in virtual environment
 
@@ -394,12 +394,12 @@ plt.show()
 
 - Steering Wheel and Break values over Time
 
-![Untitled](9.png)
+![Untitled](/img/9.png)
 
 - Steering Wheel value according to the Signal change
 
-![Untitled](10.png)
+![Untitled](/img/10.png)
 
 - Break value according to the Signal change
 
-![Untitled](11.png)
+![Untitled](/img/11.png)
