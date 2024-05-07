@@ -4,7 +4,7 @@
 
 ## Overview
 
----
+
 
  This study aims to explore the potential of haptic feedback in communicating complex navigation information to a driver’s rear neck. To achieve the goal, we propose a multi-modal haptic interface that provides navigation route information with a haptic rendering algorithm using vibrotactile actuator array and instantaneous alarm signal with cutaneous feedback mechanism. 
 
@@ -14,7 +14,6 @@ Architecture of the proposed haptic system
 
 ## Circuit **configuration**
 
----
 
 ![Untitled](./img/1.png)
 
@@ -27,7 +26,7 @@ Architecture of the proposed haptic system
 
 ## Arduino Code
 
----
+
 
 ### Parameters
 
@@ -243,7 +242,7 @@ void tactileStroke(float x, float y) {
 
 ## Driving Virtual Environment (Unity)
 
----
+
 
 Using Test Track, Logitech SDK Unity package.
 
