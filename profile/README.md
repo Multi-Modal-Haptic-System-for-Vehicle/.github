@@ -8,7 +8,7 @@
 
  This study aims to explore the potential of haptic feedback in communicating complex navigation information to a driver’s rear neck. To achieve the goal, we propose a multi-modal haptic interface that provides navigation route information with a haptic rendering algorithm using vibrotactile actuator array and instantaneous alarm signal with cutaneous feedback mechanism. 
 
-![Architecture of the proposed haptic system](../img/0.png)
+![Architecture of the proposed haptic system](./img/0.png)
 
 Architecture of the proposed haptic system
 
@@ -32,7 +32,7 @@ Architecture of the proposed haptic system
 ### Parameters
 
 ```arduino
-		int mode = 1;
+int mode = 1;
 int duration = 60;
 int splitNum = 30;
 ```
@@ -51,7 +51,7 @@ $$
 
 ```arduino
 case '0':
-	mode = 0;
+  mode = 0;
   Serial.println("Set mode 2x2");
   break;
 case '1':
