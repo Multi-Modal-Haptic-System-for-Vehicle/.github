@@ -31,7 +31,7 @@ Architecture of the proposed haptic system
 
 ### Parameters
 
-```arduino
+```C
 int mode = 1;
 int duration = 60;
 int splitNum = 30;
@@ -49,7 +49,7 @@ $$
 
 **Mode**
 
-```arduino
+```C
 case '0':
   mode = 0;
   Serial.println("Set mode 2x2");
@@ -68,7 +68,7 @@ case '2':
 
 **Duration**
 
-```arduino
+```C
 case '+':
   duration += 10;
   Serial.print("Set duration ");
@@ -84,7 +84,7 @@ case '-':
 
 **SplitNum**
 
-```arduino
+```C
 case '*':
   splitNum += 10;
   Serial.print("Set number of stimuli ");
@@ -102,7 +102,7 @@ case '/':
 
 ### 1. Input values
 
-```arduino
+```C
 case 'a':
   for(int i=0; i<=splitNum; i++) {
     x = 0;
@@ -127,7 +127,7 @@ Converting input values into coordinate values for each stimulus
 
 Calculate the distance from each actuator to the position you want to stimulate (target position).
 
-```arduino
+```C
 float calcDistance(float x, float y, int& d1Idx, int& d2Idx, int& d3Idx, float& d1, float& d2, float& d3, int mode) {
 float d[16] = {0, };
 int size; // capacity
@@ -209,7 +209,7 @@ $$
 A_i = \sqrt{\frac{1/d_i}{\sum^3_{j=1}1/d_j}}A_v
 $$
 
-```arduino
+```C
 float calcIntensity(float d1, float d2, float d3) {
   if (d1 < 0)
     return 0;
@@ -225,7 +225,7 @@ float calcIntensity(float d1, float d2, float d3) {
 
 ### 5. **Rendering specific signals**
 
-```arduino
+```C
 void tactileStroke(float x, float y) {
   calcDistance(x, y, d1Idx, d2Idx, d3Idx, d1, d2, d3, mode);
   beginVibrate(d1Idx, calcIntensity(d1, d2, d3));
