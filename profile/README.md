@@ -8,20 +8,20 @@
 
  This study aims to explore the potential of haptic feedback in communicating complex navigation information to a driver’s rear neck. To achieve the goal, we propose a multi-modal haptic interface that provides navigation route information with a haptic rendering algorithm using vibrotactile actuator array and instantaneous alarm signal with cutaneous feedback mechanism. 
 
-![Architecture of the proposed haptic system](.github/profile/img/0.png)
+![Architecture of the proposed haptic system](/profile/img/0.png)
 
 Architecture of the proposed haptic system
 
 ## Circuit **configuration**
 
 
-![Untitled](.github/profile/img/1.png)
+![Untitled](/profile/img/1.png)
 
 - I2C communication : Using SCL/SDA port to communicate with Arduino
 - 5V input
 - Use ports 1-6 of each multiplexer (because ports 0 and 7 are less reliable)
 
-![Untitled](.github/profile/img/2.png)
+![Untitled](/profile/img/2.png)
 - + and - signal on the connection between DRV2605 and the actuator does not matter
 
 ## Arduino Code
@@ -42,7 +42,7 @@ $$
 SOA = 0.32 \cdot duration + 0.0473 ≥ duration
 $$
 
-![Untitled](.github/profile/img/3.png)
+![Untitled](/profile/img/3.png)
 
 ### Modifying Parameters
 
@@ -63,7 +63,7 @@ case '2':
   break;
 ```
 
-![Untitled](.github/profile/img/4.png)
+![Untitled](/profile/img/4.png)
 
 **Duration**
 
@@ -110,11 +110,11 @@ case 'a':
   }
 ```
 
-![Example of Navigation sign](.github/profile/img/5.png)
+![Example of Navigation sign](/profile/img/5.png)
 
 Example of Navigation sign
 
-![Example of Alert sign](.github/profile/img/6.png)
+![Example of Alert sign](/profile/img/6.png)
 
 Example of Alert sign
 
@@ -248,11 +248,11 @@ Using Test Track, Logitech SDK Unity package.
 
 Driving Virtual Environment send serial signals to microprocessor (Arduino)
 
-![Third-person perspective of the driving simulation in virtual environment](.github/profile/img/7.png)
+![Third-person perspective of the driving simulation in virtual environment](/profile/img/7.png)
 
 Third-person perspective of the driving simulation in virtual environment
 
-![First-person perspective of the driving simulation in virtual environment](.github/profile/img/8.png)
+![First-person perspective of the driving simulation in virtual environment](/profile/img/8.png)
 
 First-person perspective of the driving simulation in virtual environment
 
@@ -393,12 +393,12 @@ plt.show()
 
 - Steering Wheel and Break values over Time
 
-![Untitled](.github/profile/img/9.png)
+![Untitled](/profile/img/9.png)
 
 - Steering Wheel value according to the Signal change
 
-![Untitled](.github/profile/img/10.png)
+![Untitled](/profile/img/10.png)
 
 - Break value according to the Signal change
 
-![Untitled](.github/profile/img/11.png)
+![Untitled](/profile/img/11.png)
