@@ -110,9 +110,13 @@ case 'a':
   }
 ```
 
-![Example of Navigation sign](/profile/img/5.png)
+![Example of Navigation sign(8 patterns)](/profile/img/12.png)
 
-Example of Navigation sign
+Example of Navigation sign (8 patterns)
+
+![Example of Navigation sign(10 patterns)](/profile/img/5.png)
+
+Example of Navigation sign (10 patterns)
 
 ![Example of Alert sign](/profile/img/6.png)
 
